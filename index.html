@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito G27</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts - Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <img src="./img/logo blanco.png" alt="logo_nombre" class="nav__img">
+        <div class="nav_text">
+            <h1 class="border">Academlo</h1>
+            <h1 class="wave">Academlo</h1>
+        </div>
+        
+        <button class="nav__button nav__button--toggle">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <section class="nav__car" id="car">
+            <div id="car__list">
+
+            </div>
+            <div id="total-value" class="sum-values"></div>
+            <button class="empty__button" id="empty-car">Eliminar</button>
+        </section>
+    </nav>
+    <header class="header">
+        <img src="./img/logo blanco.png" alt="logo_header" class="header__img">
+        <div class="header__div">
+            <h2 class="header__h2">
+                clothing store
+            </h2>
+        </div>
+    </header>
+    <main class="main">
+        <h3 class="main__h3">Todos nuestros productos</h3>
+        <!-- Lista de productos -->
+        <section id="products-container" class="main__products products">
+
+        </section>
+        <!-- Modal -->
+        <section class="modal" id="modal-container">
+            <div class="close">
+                <ion-icon name="close-outline" class="modal__icon"></ion-icon>
+            </div>
+            <div id="modal-element" class="modal__view">
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+          <div class="integrants">
+            <div class="integrants__perfil integrants__perfil--1"><img src="./img/335323200_1358718614984872_5001175645795025192_n.jpg" alt="profile"></div>
+            <h2>Fernando Mayorga</h2>
+          </div>
+          <div class="integrants">
+            <div class="integrants__perfil integrants__perfil--2"><img src="./img/dylan.jpg" alt="profile"></div>
+            <h2>Dylan Murga</h2>
+          </div>
+          <div class="integrants">
+            <div class="integrants__perfil integrants__perfil--3"><img src="./img/cindy.jpg" alt="profile"></div>
+            <h2>Cindy Paez</h2>
+          </div>
+          <div class="integrants">
+            <div class="integrants__perfil integrants__perfil--4"><img src="./img/rober.jpg" alt="profile"></div>
+            <h2>Roberth Salazar</h2>
+          </div>
+        </section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/c1c88126f1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/mian.js"></script>
+</body>
+</html>
